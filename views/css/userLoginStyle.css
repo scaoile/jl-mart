@@ -1,0 +1,169 @@
+body {
+    font-family: 'Poppins', 'Montserrat';
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.left, .right {
+    padding: 5% 4%;
+    box-sizing: border-box;
+}
+
+.left {
+    width: 35%;
+    height: 100vh;
+    background-image: url('../images/bg-login.svg');
+    background-size: cover;
+    background-position: center;
+    background-color:#302F35;
+    padding: 5% 4%;
+}
+
+.right {
+    height: 100vh;
+    width: 65%;
+    padding: 5% 6%;
+}
+
+.top-part {
+    display: flex;
+    align-items: center;
+    padding-bottom: 28%;
+}
+
+.top-part h2{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 4%;
+    color: #FFFFFF;
+    opacity: 0.8;
+    padding: 0;
+}
+
+.logo {
+    width: 10%;
+}
+
+.title-message {
+    font-family: 'Poppins';
+    text-align: center;
+    color: white;
+    font-size: 2.7rem;
+    padding-bottom: 5%;
+}
+
+.message {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.8;
+    padding-bottom: 33%;;
+}
+
+.question {
+    text-align:center;
+    color: white;
+    font-weight: 300;
+    font-size: .8rem;
+    opacity: .5;
+    margin-bottom: 3%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.sign-up {
+    border-radius: 1rem;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 2% 13%;
+    font-family: 'Poppins';
+}
+
+.sign-up:hover {
+    background-color:white;
+    color: black;
+}
+
+.sign-in {
+   color:#D10E8A;
+   font-weight: 600;  
+   font-size: 2.2rem;  
+}
+
+.sign-in-message {
+    font-size: 1rem;
+    opacity: .6;
+}
+
+form {
+    padding: 6% 0 3% 0; 
+}
+
+
+input[type="text"],
+input[type="password"] {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #4d4c52;
+    border-radius: 4px;
+    width: 80%;
+}
+input::placeholder {
+    font-family: 'Poppins';
+    opacity: .5;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    accent-color: #04BEC4;
+}
+
+.keep {
+    font-size: .8rem;
+    color: #5C5C5C;
+    font-weight: 400;
+}
+
+.checkboxx {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+button[type="submit"] {
+    font-family: 'Poppins';
+    font-weight: 500;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #D10E8A;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 85%;
+    border-radius: 20px;
+}
+
+.note {
+    padding:  0 22% 0 8%;
+    text-align: center;
+    font-size: .8rem;
+    opacity: .6;
+}
