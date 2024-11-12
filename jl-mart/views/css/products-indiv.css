@@ -1,0 +1,118 @@
+body {
+    font-family: 'Poppins', 'Montserrat';
+    background-color: white;
+    margin: 0;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+.main-container {
+    margin: 2% 4%;
+}
+
+.product-container {
+    margin: 5% 0 10% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.left {
+    width:45%;
+
+}
+
+.product-image {
+    height: 400px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.right {
+    width:45%;
+}
+
+.right h1 {
+    color: #3A3A3A;
+    margin-bottom: 4%;
+}
+
+.right h3 {
+    font-weight: 500;
+    color: #3A3A3A;
+    margin-bottom: 4%;
+}
+
+
+.right h3 span {
+    color: #A10257;
+}
+
+.right h2 {
+    padding: 5px 20px;
+    background-color: #A8FEFF;
+    color: #397EAF;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.right p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #757575;
+    font-size: .9rem;
+    margin-bottom: 5%;
+}
+
+.add-to-cart {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.quantity-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 3px solid #3b3b3b;
+    border-radius: 10px;
+}
+
+input[type="number"] {
+    text-align: center;
+    width: 80px;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background:transparent;
+    border: none;
+}
+
+.minus-btn,.plus-btn {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add {
+    margin-left: 30px;
+    background-color: #A10257;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 70px;
+    cursor:pointer;
+}

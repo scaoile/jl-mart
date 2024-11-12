@@ -1,0 +1,124 @@
+body {
+    font-family: 'Poppins', 'Montserrat';
+    background-color: white;
+    margin: 0;
+}
+
+.main-container {
+    margin: 2% 4%;
+}
+
+.banner {
+    margin: 3% 0;
+    background-color:#333333;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    font-size: .85rem;
+    padding: 1.1% 0;
+    font-weight: 600;
+}
+
+.banner img{
+    margin-right: 2%;
+    width: 45px;
+}
+
+.edit-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 45%;
+    font-size: 1rem;
+    margin-bottom: 4%;
+}
+
+.edit {
+    padding: 1.2% 4%;
+    background-color:#DD4AA7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.edit-profile h2 a{
+    color: #DD4AA7;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+
+.setting-form {
+    display: flex;
+}
+.setting-form img {
+    width: 60px;
+}
+
+
+.left {
+    width: 12%;
+    text-align: center;
+}
+
+.right {
+    width: 88%;
+    padding-left: 5%;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.first-row input[type="text"], .first-row input[type="number"], .first-row input[type="password"] {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #4d4c52;
+    border-radius: 4px;
+    width: 450px;
+}
+
+.second-row input[type="text"], .second-row input[type="email"], .second-row input[type="number"] {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #4d4c52;
+    border-radius: 4px;
+    width: 97%;
+}
+
+input::placeholder {
+    font-family: 'Poppins';
+    opacity: .5;
+}
+
+.title-form {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 3% 0 4% 0;
+}
+
+
+.submit {
+    margin: 5% 0;
+    color: white;
+    background-color:#1FABAC;
+    border: none;
+    padding: .9% 6%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    float:right;
+    cursor:pointer;
+}

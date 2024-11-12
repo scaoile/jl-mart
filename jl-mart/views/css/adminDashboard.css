@@ -1,0 +1,372 @@
+body {
+    font-family: 'Poppins', 'Montserrat';
+    background-color: white;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+.main-container {
+    margin: 2% 4%;
+}
+
+
+.title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color:#3A3A3A;
+    margin-top: 4%;
+}
+
+.banner {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+}
+
+.left {
+    width: 90%;
+    background-color: #333333;
+    border-radius: 15px;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('../images/banner-bg.svg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.left form{
+    display: flex;
+}
+.banner-text {
+    width: 40%;
+    padding: 7% 7%;
+}
+
+input[type="text"],
+input[type="number"]{
+    background-color: transparent;
+    border: none;
+    font-family: 'Poppins';
+}
+
+.banner-img {
+    width: 200px;
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    background-color: #f3f4f6; 
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .banner-img:hover {
+    background-color: #e2e8f0;
+  }
+
+  #banner-img {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .banner-img::after {
+    content: "Upload Image";
+    font-size: 16px;
+    color: #64748b;
+    text-align: center;
+  }
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.card-footer img{
+    width: 30px;
+}
+
+#sale-title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 7%;
+}
+
+#description{
+    font-weight: 300;
+    color: white;
+    margin-bottom: 15%;
+    width: 100%;
+}
+
+
+.banner-text button {
+    background-color: #B92D23;
+    color: white;
+    border: none;
+    padding: 4% 15%;
+    border-radius: 30px;
+    margin-top: 5%;
+    font-weight: 300;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.right {
+    width: 100%;
+}
+
+.top-right {
+    background: linear-gradient(135deg, #FFA5DE, #FF6F91);
+    height: 45%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align:center;
+}
+
+.top-right label , .top-right input[type="number"] {
+    margin-top: 7%;
+    text-align: center;
+}
+
+.top-right label, .top-right span {
+    font-weight: bold;
+}
+
+.top-right input[type="number"] {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:#D6309A;
+    width: 100px;
+    border: 2px solid #D6309A;
+    border-radius: 10px;
+}
+
+
+.down-right {
+    margin-top: 5%;
+    background: linear-gradient(135deg, #9BFEFF, #17FDFF);
+    height: 43%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: #333333
+}
+
+.down-right-text p {
+    text-align:center;
+    padding: 5% 18%;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+
+.down-right-text a {
+    text-decoration : none;
+    color: #375587;
+}
+
+.category-container {
+    padding: 3% 0 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upload {
+    margin-top: 10%;
+    padding: 4% 30%;
+    border-radius: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    color: #29BEC0;
+}
+
+.upload:hover {
+    background-color: #3A3A3A;
+    color: white;
+}
+
+
+.category {
+    padding: 4.5% 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: #333333;
+}
+
+.category h1 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.category img {
+    width: 30px;
+}
+
+.category-card {
+    background-color:#D6309A;
+    height: 120px;
+    padding: 4% 5% 5% 5%;
+    width: 220px;
+    border-radius: 10px;
+    text-align:center;
+    color: white;
+}
+
+.category-card2 {
+    background-color:#29BEC0;
+    height: 120px;
+    padding: 4% 5% 5% 5%;
+    width: 220px;
+    border-radius: 10px;
+    text-align:center;
+    color: white;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color:#D6309A;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+
+
+.category-card input[type="text"] ,  .category-card2 input[type="text"] {
+    color: white;
+    text-align: center;
+}
+
+.orders {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.category-select {
+    padding: 2px 14px;
+    font-size: 16.5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #D6309A;
+    color: white;
+    font-family: 'Poppins';
+    height: 40px;
+    margin-top: 4%;
+}
+
+.proof-btn{
+    background-color: #29BEC0;
+    color: white;
+    border: none;
+    padding: 2% 5%;
+    border-radius: 10px;
+    font-weight: 300;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.card-container {
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: #F1F1F1;
+    display: flex;
+    gap: 20px 150px;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+    justify-content:center;
+}
+
+.card {
+    min-width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0.1, 0.3, 0, 0.2);
+    margin: 30px 0;
+    padding: 15px;
+    max-width: 310px;
+}
+
+.card-header {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card-body p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.card-body ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin: 4px 0;
+    padding: 8px;
+}
+
+.status-label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.status-select {
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #292929;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.save{
+    margin-top: 10%;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    color: #29BEC0;
+    cursor: pointer;
+}
+
+.save:hover {
+    background-color: #3A3A3A;
+    color: white;
+}

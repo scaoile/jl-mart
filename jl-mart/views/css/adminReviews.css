@@ -1,0 +1,140 @@
+body {
+    font-family: 'Poppins', 'Montserrat';
+    background-color: white;
+    margin: 0;
+}
+
+.main-container {
+    margin: 2% 4%;
+}
+
+.title {
+    margin: 0 0 3% 0;
+    font-size: 1.7rem;
+    color: #3A3A3A;
+}
+
+.comment-container {
+    padding: 4% 0 3% 0;
+}
+
+.comments  {
+    background-color: white;
+    color: #000000;
+    padding: .5% 2% 2% 2%;
+    border-radius: 5px;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    border: 2px solid #585858;
+}
+
+.top-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.top-left-comment, .top-right-comment {
+    display: flex;
+    align-items:center;
+}
+
+.top-left-comment img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.top-left-comment h2 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.top-left-comment h3 {
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+
+.rate {
+    background-color:#29BEC0;
+    font-size: .9rem;
+    color: white;
+    padding: 2% 4%;
+    text-align:center;
+    border-radius: 5px;
+    width: 220px;
+    margin-right: 30px;
+}
+
+
+.rate2 {
+    background-color:#D6309A;
+    font-size: .9rem;
+    color: white;
+    padding: 2% 4%;
+    text-align:center;
+    border-radius: 5px;
+    width: 220px;
+    margin-right: 30px;
+}
+
+.heart p {
+    text-align: center;
+    margin: 1% 0;
+}
+
+.heart-button {
+    font-size: 2rem;
+    color: #D10E8A;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.heart-button.liked {
+    color: #FF0000;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    margin: 10% 0 0 10%;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}
+
+.delete-button img {    
+    width:25px;
+}
+
+textarea {
+    width: 98%;
+    background-color: #d6d3d3;
+    border: 1px solid #7c7a7a;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Poppins';
+}
+
+
+.main-comment p {
+    margin: 2% 0 3.5% 0;
+}
+.comment-input {
+    position: relative;
+}
+
+#new-comment {
+    padding-bottom: 50px; 
+}
+
+.submit-image {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 30px; 
+    height: 30px;
+}
