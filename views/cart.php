@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'customer') {
+    header("location: ../login.php");
+    exit();
+}
+
 include "../classes/database-connect.php";
 include "../classes/cart-ctrl.php";
 include "../classes/order-ctrl.php";

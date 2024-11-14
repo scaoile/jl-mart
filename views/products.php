@@ -18,6 +18,7 @@ if (isset($_POST['search'])) {
 $categories = $inventory->getCategories();
 
 
+
 ?>
 
 <!DOCTYPE html>
@@ -107,7 +108,14 @@ $categories = $inventory->getCategories();
                             </div>
                             <div class='row3'>
                                 <div class='inner-col'><a href='products-indiv.php?product_id={$product['product_id']}' class='btn'>View Product</a></div>
-                                <form method='post' action='../includes/add_to_cart.inc.php?id={$product['product_id']}'>
+                                ";
+                if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'customer') {
+                    echo "<form method='post' action='userLogin.php?message=Please log in to add to cart'>";
+                } else {
+                    echo "<form method='post' action='../includes/add_to_cart.inc.php?id={$product['product_id']}'>";
+                }
+
+                echo "
                                     <input type='hidden' name='quantity' id='quantity' value='1'>
                                     <button type='submit' name='submit' class='btn2'><img src='images/cart-card.svg' alt='Add to Cart'></button>
                                 </form> 

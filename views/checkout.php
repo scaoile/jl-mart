@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'customer') {
+    header("location: ../login.php");
+    exit();
+}
+
 if (!isset($_POST['select'])) {
     header("location: ../views/cart.php?message=Choose atleast 1 product to checkout");
     exit();

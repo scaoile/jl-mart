@@ -33,6 +33,7 @@
         </div>
     </div>
 
+    <script src="js/message.js"></script>
 </body>
 
 </html>

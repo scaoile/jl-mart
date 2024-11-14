@@ -1,6 +1,6 @@
 <?php
-
 session_start();
+
 
 include "../classes/database-connect.php";
 include "../classes/inventory-ctrl.php";
@@ -11,6 +11,13 @@ $inventory = new InventoryCtrl();
 $id = $_GET["product_id"];
 
 $product = $inventory->getProductById($id);
+
+
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'customer') {
+    $action = "userLogin.php?message=Please login to add to cart";
+} else {
+    $action = "../includes/add_to_cart.inc.php?id=$id";
+}
 
 ?>
 
@@ -41,7 +48,7 @@ $product = $inventory->getProductById($id);
                 <h2>PHP <?php echo $product['price'] ?> </h2>
                 <p><?php echo $product['description'] ?></p>
 
-                <form method="post" action="../includes/add_to_cart.inc.php?id=<?php echo $id ?>" class="add-to-cart">
+                <form method="post" action="<?php echo $action ?>" class="add-to-cart">
                     <div class="quantity-wrapper">
                         <button type='button' class="minus-btn" onclick="updateQuantity(-1)">-</button>
                         <input type="number" name="quantity" id="quantity" value="1" min="1">

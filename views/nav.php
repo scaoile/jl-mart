@@ -14,10 +14,25 @@
         <img src="images/home-icon.svg"> <a href="homepage.php">Homepage</a>
         <img src="images/products-icon.svg"><a href="products.php">Products</a>
     </div>
-    <div class="right-nav">
-        <img src="images/account-icon.svg"><a href="accountSetting.php">Account</a>
-        <div class="cart"><img src="images/cart-icon.svg"><a href="cart.php"><span class="cart-text">Cart & Orders</span></a></div>
-    </div>
+    <?php
+
+    if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'customer') {
+        echo "
+            <div class='right-nav'>
+                <img src='images/account-icon.svg'><a href='signup.php'>Sign Up</a>
+                <div class='cart'><img src='images/cart-icon.svg'><a href='cart.php'><span class='cart-text'>Cart & Orders</span></a></div>
+            </div>
+        ";
+    } else {
+        echo "
+            <div class='right-nav'>
+                <img src='images/account-icon.svg'><a href='accountSetting.php'>Account</a>
+                <div class='cart'><img src='images/cart-icon.svg'><a href='cart.php'><span class='cart-text'>Cart & Orders</span></a></div>
+            </div>
+        ";
+    }
+    ?>
+
 </div>
 
 <script src="js/message.js"></script>

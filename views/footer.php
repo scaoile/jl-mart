@@ -19,9 +19,15 @@
             <a href="cart.php">
                 <h2>CART</h2>
             </a>
-            <a href="../includes/logout.inc.php">
-                <h2>LOGOUT</h2>
-            </a>
+            <?php
+            if (isset($_SESSION['role'])) {
+                echo "
+                    <a href='../includes/logout.inc.php'>
+                        <h2>LOGOUT</h2>
+                    </a>
+            ";
+            }
+            ?>
         </div>
     </div>
     <p> Contact us: support@jlmart.com | Privacy Policy | Terms & Conditions</p>

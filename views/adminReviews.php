@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'manager') {
+    header("location: ../adminLogin.php");
+    exit();
+}
+
 include '../classes/database-connect.php';
 include '../classes/feedback-ctrl.php';
 

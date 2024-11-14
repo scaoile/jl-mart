@@ -38,6 +38,8 @@
             <p class="note">Prices and availability are subject to change without notice. We strive for accuracy, but errors may occur.</p>
         </div>
     </div>
+
+    <script src="js/message.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'manager') {
+    header("location: ../adminLogin.php");
+    exit();
+}
+
 include "../classes/database-connect.php";
 include "../classes/inventory-ctrl.php";
 include "../classes/imagehandler-ctrl.php";
