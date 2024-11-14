@@ -20,7 +20,7 @@
         echo "
             <div class='right-nav'>
                 <img src='images/account-icon.svg'><a href='signup.php'>Sign Up</a>
-                <div class='cart'><img src='images/cart-icon.svg'><a href='cart.php'><span class='cart-text'>Cart & Orders</span></a></div>
+                <div class='cart'><img src='images/cart-icon.svg'><a href='signup.php?message=Sign up and Log in to access Cart & Orders'><span class='cart-text'>Cart & Orders</span></a></div>
             </div>
         ";
     } else {
